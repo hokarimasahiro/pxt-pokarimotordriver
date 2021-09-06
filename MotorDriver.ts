@@ -2,7 +2,7 @@
   motor driver block for pokari motor driver
 */
 
-//% color=#006464 weight=20 icon="\uf1b9" block="Motor Driver"
+//% color=#006464 icon="\uf1b9" block="Motor Driver"
 namespace motordriver {
 
     let initFlag = 0;
@@ -26,7 +26,7 @@ namespace motordriver {
      */
     //% blockId="setMotor12" block="motor1 %motor1| motor2 %motor2"
     //% motor1.min=-127 motor1.max=127 motor2.min=-127 motor2.max=127
-    function setMotor12(motor1: number, motor2: number): void {
+    export function setMotor12(motor1: number, motor2: number): void {
         init();
         let buf = pins.createBuffer(3);
         buf[0] = 0x04;
@@ -42,7 +42,7 @@ namespace motordriver {
      */
     //% blockId="setMotor34" block="motor3 %motor3| motor4 %motor4"
     //% motor3.min=-127 motor3.max=127 motor4.min=-127 motor4.max=127
-    function setMotor34(motor3: number, motor4: number): void {
+    export function setMotor34(motor3: number, motor4: number): void {
         init();
         let buf = pins.createBuffer(3);
         buf[0] = 0x06;
