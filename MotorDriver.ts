@@ -21,8 +21,8 @@ namespace motordriver {
 
     /**
      * set motor speed for motor 1 and 2.
-     * @param motor1 Moter1 Power in -127 to 127. eg:50
-     * @param motor2 Motor2 Power in -127 to 127. eg:50
+     * @param motor1 Moter1 Power in -127 to 127. eg:0
+     * @param motor2 Motor2 Power in -127 to 127. eg:0
      */
     //% blockId="setMotor12" block="motor1 %motor1| motor2 %motor2"
     //% motor1.min=-127 motor1.max=127 motor2.min=-127 motor2.max=127
@@ -37,8 +37,8 @@ namespace motordriver {
 
     /**
      * set motor speed for motor 3 and 4.
-     * @param motor3 Moter3 Power in -127 to 127. eg:50
-     * @param motor4 Motor4 Power in -127 to 127. eg:50
+     * @param motor3 Moter3 Power in -127 to 127. eg:0
+     * @param motor4 Motor4 Power in -127 to 127. eg:0
      */
     //% blockId="setMotor34" block="motor3 %motor3| motor4 %motor4"
     //% motor3.min=-127 motor3.max=127 motor4.min=-127 motor4.max=127
